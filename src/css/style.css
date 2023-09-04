@@ -1,0 +1,392 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Metrophobic&family=Montserrat:ital@1&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Slab&family=Roboto:wght@100;300;400;500&family=Source+Sans+3:ital,wght@1,700&display=swap");
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header .headerTop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(246, 247, 248);
+  padding: 0 45px;
+}
+.header .headerTop .topLeft {
+  display: flex;
+}
+.header .headerTop .topLeft .topNav {
+  display: flex;
+  gap: 24px;
+}
+.header .headerTop .topLeft .topNav .topNavItem {
+  line-height: 1.15;
+  padding: 16px 0;
+}
+.header .headerTop .topLeft .topNav .topNavItem a {
+  font-size: 14px;
+  color: #666;
+  letter-spacing: -1px;
+}
+.header .headerTop .topLeft .topNav .btn {
+  font-weight: 400;
+}
+.header .headerTop .topLeft .topNav .btn a {
+  padding: 6px 12px;
+  border: 1px solid #0056c1;
+  border-radius: 40px;
+}
+.header .headerTop .topselect {
+  display: none;
+}
+.header .headerTop .topRight {
+  display: flex;
+  color: #666;
+  font-weight: bold;
+  gap: 20px;
+}
+.header .headerTop .topRight .language .langs {
+  display: none;
+}
+.header .container .headerMiddle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(212, 206, 206, 0.3);
+}
+.header .container .headerMiddle .middleLeft {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header .container .headerMiddle .middleLeft .logo {
+  width: 110px;
+  height: 50px;
+}
+.header .container .headerMiddle .middleLeft .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header .container .headerMiddle .middleLeft .middleList {
+  width: 20%;
+}
+.header .container .headerMiddle .middleLeft .middleList .choice {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header .container .headerMiddle .middleLeft .middleList .choice .choiceİtem {
+  position: relative;
+  font-weight: 500;
+}
+.header .container .headerMiddle .middleLeft .middleList .choice .choiceİtem::before {
+  color: #262626;
+  content: "/";
+  cursor: default;
+  font-size: 15px;
+  bottom: 0;
+  right: -20px;
+  position: absolute;
+}
+.header .container .headerMiddle .middleRight a {
+  color: #0056c1;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .container .headerMiddle .middleRight a i {
+  font-size: 25px;
+}
+.header .container .headerMiddle .middleRight .navigation {
+  display: none;
+}
+.header .container .headerBottom {
+  width: 100%;
+}
+.header .container .headerBottom .dropMenu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  border-bottom: 1px solid rgba(212, 206, 206, 0.3);
+}
+.header .container .headerBottom .dropMenu .listMenu {
+  padding: 25px 0;
+}
+.header .container .headerBottom .dropMenu a {
+  font-size: 16px;
+  color: #000;
+  letter-spacing: -1px;
+  font-weight: 500;
+  position: relative;
+  transition: 1s;
+}
+.header .container .headerBottom .dropMenu a::before {
+  content: "";
+  background-color: #0056c1;
+  bottom: -25px;
+  left: 0;
+  height: 3px;
+  position: absolute;
+  width: 0;
+  transition: 1s;
+  border-radius: 10px;
+}
+.header .container .headerBottom .dropMenu a:hover::before {
+  width: 100%;
+}
+
+@media (max-width: 1080px) {
+  .header {
+    width: 100%;
+  }
+  .header .headerTop {
+    width: 100%;
+  }
+  .header .headerTop .topLeft .topNav {
+    gap: 15px;
+  }
+  .header .headerTop .topLeft .topNav .topNavItem {
+    padding: 16px 0;
+  }
+  .header .headerTop .topLeft .topNav .topNavItem a {
+    font-size: 12px;
+  }
+  .header .headerTop .topLeft .topNav .btn {
+    font-weight: 300;
+  }
+  .header .headerTop .topLeft .topNav .btn a {
+    padding: 4px 8px;
+  }
+  .header .headerTop .topRight {
+    font-size: 12px;
+    gap: 15px;
+  }
+  .header .headerTop .topRight .language .langs {
+    display: none;
+  }
+  .header .container .headerMiddle {
+    width: 100%;
+  }
+  .header .container .headerMiddle .middleLeft {
+    gap: 30px;
+  }
+  .header .container .headerMiddle .middleLeft .logo {
+    width: 110px;
+    height: 50px;
+  }
+  .header .container .headerMiddle .middleLeft .logo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .header .container .headerMiddle .middleLeft .middleList {
+    width: 20%;
+  }
+  .header .container .headerMiddle .middleLeft .middleList .choice {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .header .container .headerMiddle .middleLeft .middleList .choice .choiceİtem {
+    position: relative;
+    font-weight: 400;
+  }
+  .header .container .headerMiddle .middleLeft .middleList .choice .choiceİtem::before {
+    color: #262626;
+    content: "/";
+    cursor: default;
+    font-size: 15px;
+    bottom: 0;
+    right: -20px;
+    position: absolute;
+  }
+  .header .container .headerMiddle .middleRight a {
+    color: #0056c1;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .header .container .headerMiddle .middleRight a i {
+    font-size: 25px;
+  }
+  .header .container .headerBottom {
+    width: 100%;
+  }
+  .header .container .headerBottom .dropMenu {
+    width: 100%;
+    gap: 20px;
+  }
+  .header .container .headerBottom .dropMenu .listMenu {
+    padding: 25px 0;
+  }
+  .header .container .headerBottom .dropMenu a {
+    font-size: 12px;
+    color: #000;
+    letter-spacing: -1px;
+    font-weight: 400;
+    position: relative;
+    transition: 1s;
+  }
+  .header .container .headerBottom .dropMenu a::before {
+    content: "";
+    background-color: #0056c1;
+    bottom: -25px;
+    left: 0;
+    height: 3px;
+    position: absolute;
+    width: 0;
+    transition: 1s;
+    border-radius: 10px;
+  }
+  .header .container .headerBottom .dropMenu a:hover::before {
+    width: 100%;
+  }
+}
+@media (max-width: 885px) {
+  .header {
+    width: 100%;
+  }
+  .header .headerTop {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .header .headerTop .topLeft {
+    display: none;
+  }
+  .header .headerTop .topLeft .topNav {
+    gap: 15px;
+  }
+  .header .headerTop .topLeft .topNav .topNavItem {
+    padding: 16px 0;
+  }
+  .header .headerTop .topLeft .topNav .topNavItem a {
+    font-size: 12px;
+  }
+  .header .headerTop .topLeft .topNav .btn {
+    font-weight: 300;
+  }
+  .header .headerTop .topLeft .topNav .btn a {
+    padding: 4px 8px;
+  }
+  .header .headerTop .topselect {
+    display: block;
+    padding: 20px 0;
+  }
+  .header .headerTop .topRight {
+    font-size: 12px;
+    gap: 15px;
+  }
+  .header .headerTop .topRight .search .searchB {
+    display: none;
+  }
+  .header .headerTop .topRight .language .langs {
+    display: none;
+  }
+  .header .container .headerMiddle {
+    width: 100%;
+  }
+  .header .container .headerMiddle .middleLeft {
+    gap: 30px;
+  }
+  .header .container .headerMiddle .middleLeft .logo {
+    width: 110px;
+    height: 50px;
+  }
+  .header .container .headerMiddle .middleLeft .logo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .header .container .headerMiddle .middleLeft .middleList {
+    display: none;
+  }
+  .header .container .headerMiddle .middleLeft .middleList .choice {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .header .container .headerMiddle .middleLeft .middleList .choice .choiceİtem {
+    position: relative;
+    font-weight: 400;
+  }
+  .header .container .headerMiddle .middleLeft .middleList .choice .choiceİtem::before {
+    color: #262626;
+    content: "/";
+    cursor: default;
+    font-size: 15px;
+    bottom: 0;
+    right: -20px;
+    position: absolute;
+  }
+  .header .container .headerMiddle .middleRight a {
+    display: none;
+  }
+  .header .container .headerMiddle .middleRight a i {
+    display: none;
+  }
+  .header .container .headerMiddle .middleRight .navigation {
+    display: block;
+  }
+  .header .container .headerMiddle .middleRight .navigation i {
+    font-size: 30px;
+    color: #666;
+  }
+  .header .container .headerBottom {
+    width: 100%;
+  }
+  .header .container .headerBottom .dropMenu {
+    display: none;
+    gap: 20px;
+  }
+  .header .container .headerBottom .dropMenu .listMenu {
+    padding: 25px 0;
+  }
+  .header .container .headerBottom .dropMenu a {
+    font-size: 12px;
+    color: #000;
+    letter-spacing: -1px;
+    font-weight: 400;
+    position: relative;
+    transition: 1s;
+  }
+  .header .container .headerBottom .dropMenu a::before {
+    content: "";
+    background-color: #0056c1;
+    bottom: -25px;
+    left: 0;
+    height: 3px;
+    position: absolute;
+    width: 0;
+    transition: 1s;
+    border-radius: 10px;
+  }
+  .header .container .headerBottom .dropMenu a:hover::before {
+    width: 100%;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
